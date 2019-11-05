@@ -509,7 +509,7 @@ name:'app',
 }
 </style>
 ```
-* 将其他图片文件,css文件,字体文件放入相应的文件夹中(可以参照github仓库代码)
+* 将其他图片文件,css文件,字体文件放入相应的文件夹中(可以参照github仓库代码:[点击前往gitHub仓库](https://github.com/PreciousnessX/hand-webpack-vue))
 * 把项目跑起来
 ```powershell
 $ npm run dev

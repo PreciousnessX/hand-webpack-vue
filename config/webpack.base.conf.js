@@ -147,7 +147,7 @@ module.exports = {
     resolve: { // 别名配置,方便写项目时候引入
         alias: {
             // 配置别名'vue$'，不然import 'vue'时，webpack找不到
-            'vue': 'vue/dist/vue.esm.js',
+            'vue$': 'vue/dist/vue.esm.js',
             // 这个为src配置别名，非必需，为方便而已
             '@': path.resolve(__dirname, '../src')
         },

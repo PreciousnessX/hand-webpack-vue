@@ -57,18 +57,17 @@ export default {
         },5000)
       })
     },
+    test:async function(){
+      console.log("等待longtime执行完")
+      var v = await this.longTime()
+      // 等待上面的执行完，才执行下面的操作
+      console.log(v)
+    }
     
   },
   created() {
     var that = this
-    let test = async function(){
-      console.log("等待longtime执行完")
-      var v = await this.longTime()
-      console.log(v)
-    }
-   
-
-
+    that.test()
   },
   mounted() {
     console.log($("#img"))

@@ -5,7 +5,7 @@
       <span class="iconfont icon-fangxinfei" style="color:pink;font-size:24px;" id="toalert"></span>
     </p>
     <div id="box">
-      <img src="./static/images/wm.jpg" alt="哆啦A梦" />
+      <img v-if="flag" src="./static/images/wm.jpg" alt="哆啦A梦" id="img"/>
     </div>
     <div>加一行文字</div>
     <router-link class="page1"  to="/page1">page1</router-link>|
@@ -18,12 +18,16 @@
 </template>
 
 <script>
+import { setInterval } from 'timers';
 export default {
   name: "app",
   components: {},
   props: {},
   data() {
-    return {};
+    return {
+      task:null,
+      flag:false
+    };
   },
   watch: {},
   computed: {},
@@ -33,7 +37,7 @@ export default {
         name:"three",
         query:{
           a:'data1',
-          b:'data2'
+          b:'data2'   
         }
       })
     },
@@ -45,10 +49,29 @@ export default {
           b:'data2'
         }
       })
-    }
+    },
+    longTime(){
+      return new Promise(function(resolve,reject){
+        setTimeout(function(){
+          resolve('执行完了')
+        },5000)
+      })
+    },
+    
   },
-  created() {},
+  created() {
+    var that = this
+    let test = async function(){
+      console.log("等待longtime执行完")
+      var v = await this.longTime()
+      console.log(v)
+    }
+   
+
+
+  },
   mounted() {
+    console.log($("#img"))
     $("#toalert").click(function() {
       alert("jquery已经加载成功");
     });

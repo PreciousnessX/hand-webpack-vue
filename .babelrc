@@ -5,5 +5,14 @@
                 "browsers": [">0.25%", "last 2 versions", "not ie 8", "not op_mini all"]
             }
         }]
-    ]
+    ],
+    "plugins": [[ // 对es7  asyc的支持
+        "transform-runtime",
+        {
+          "helpers": false,
+          "polyfill": false,
+          "regenerator": true,
+          "moduleName": "babel-runtime"
+        }
+      ]]
 }

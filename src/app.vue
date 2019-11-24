@@ -8,7 +8,7 @@
       <img v-if="flag" src="./static/images/wm.jpg" alt="哆啦A梦" id="img"/>
     </div>
     <div>加一行文字</div>
-    <router-link class="page1"  to="/page1">page1</router-link>|
+    <router-link class="page1"  to="/page1">page1-el-ui</router-link>|
     <router-link class="page2"  to="/page2/data1/data2">page2</router-link>|
     <a class="page3"  @click="toPage3">page3</a>|
     <a class="page4"  @click="toPage4">page4</a>

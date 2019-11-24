@@ -1,6 +1,8 @@
 <template>
   <div class="wrapper">
       <h1>TWO</h1>
+      <h1>{{num}}</h1>
+      <button @click='add'>增加数字</button>
   </div>
 </template>
 
@@ -10,7 +12,9 @@ export default {
   components:{},
   props:{},
   data(){
+    var num = 0
     return {
+       num:num
     }
   },
   watch:{},
@@ -21,7 +25,11 @@ export default {
     console.log("query",this.$route.query)
   },
   mounted(){},
-  methods:{}
+  methods:{
+    add(){
+      this.num++
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>

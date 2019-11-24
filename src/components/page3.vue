@@ -1,13 +1,19 @@
 <template>
   <div class="wrapper">
-      <h1>THREE</h1>  
+      <h1>THREE</h1>
+      <page2></page2>  
+      <page2></page2>  
+      <page2></page2>  
   </div>
 </template>
 
 <script>
+import page2 from './page2'
 export default {
   name: "page3",
-  components:{},
+  components:{
+    page2:page2
+  },
   props:{},
   data(){
     return {

@@ -1,0 +1,79 @@
+{
+    "msg": "success",
+    "textbook": {
+        "uuid": "f05782204c5842dd8bac416849774491",
+        "course_id": 1,
+        "name": "噼里啪啦",
+        "description": "~",
+        "picture": "/image/d99e06323d89423996b21a957d0a665f",
+        "visitorcount": 43,
+        "status": 1,
+        "shared": 1,
+        "create_user_id": 6,
+        "create_time": 1577067897267,
+        "school_uuid": "e8dda1de-cd84-44de-9fcd-eeb31e326cd5",
+        "create_user_name": "cx"
+    },
+    "code": "0000",
+    "parts": [
+        {
+            "uuid": "4327570bc02b412dbe52d9c324136b7a",
+            "textbook_uuid": "f05782204c5842dd8bac416849774491",
+            "label": "123",
+            "type": 1,
+            "upper_id": "0",
+            "videos": [],
+            "coursewares": [
+                {
+                    "courseware_id": 2,
+                    "courseware_name": "测试3333.pdf",
+                    "courseware_url": "/38aade6082398fffd758eca94e1d2480.pdf",
+                    "textbook_uuid": "f05782204c5842dd8bac416849774491",
+                    "textbook_part_id": "4327570bc02b412dbe52d9c324136b7a",
+                    "create_user_id": 7,
+                    "courseware_download": 1,
+                    "courseware_shared": 1,
+                    "courseware_order": 2,
+                    "courseware_createtime": 1577081073036,
+                    "courseware_updatetime": 1577083932473,
+                    "courseware_size": 28383,
+                    "courseware_format": ".pdf",
+                    "courseware_valid": 1,
+                    "school_uuid": "e8dda1de-cd84-44de-9fcd-eeb31e326cd5"
+                }
+            ],
+            "children": []
+        },
+        {
+            "uuid": "213a616d0f094275bcf91f77601695a2",
+            "textbook_uuid": "f05782204c5842dd8bac416849774491",
+            "label": "节1",
+            "type": 2,
+            "upper_id": "0",
+            "videos": [],
+            "coursewares": [],
+            "children": []
+        },
+        {
+            "uuid": "34e89e3329654bc6a215af5ba814dd22",
+            "textbook_uuid": "f05782204c5842dd8bac416849774491",
+            "label": "目1",
+            "type": 2,
+            "upper_id": "0",
+            "videos": [],
+            "coursewares": [],
+            "children": []
+        },
+        {
+            "uuid": "163dbf4402f34bc5af751334428d34ff",
+            "textbook_uuid": "f05782204c5842dd8bac416849774491",
+            "label": "123",
+            "type": 1,
+            "upper_id": "0",
+            "videos": [],
+            "coursewares": [],
+            "children": []
+        }
+    ],
+    "stus": []
+}

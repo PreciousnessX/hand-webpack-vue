@@ -37,7 +37,7 @@ const routes = [{
         component: page4
     },
     {
-        path: '/add',
+              path: '/add',
         name: "add",
         component: add
     }
